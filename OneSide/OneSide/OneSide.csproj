@@ -48,16 +48,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DDD6849239CBA08C4380B417C6B49A16D2B8E31D</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>75C275E22C7EFA983F4B85945FDE3EEE24B7CE6A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>OneSide_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>OneSide_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AAAAAA.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.92.1.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
@@ -192,6 +198,9 @@
     <EmbeddedResource Include="ModeSelect.resx">
       <DependentUpon>ModeSelect.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AAAAAA.pfx" />
+    <None Include="OneSide_1_TemporaryKey.pfx" />
+    <None Include="OneSide_2_TemporaryKey.pfx" />
     <None Include="OneSide_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
